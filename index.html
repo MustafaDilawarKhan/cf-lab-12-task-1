@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table of Numbers</title>
+<style> table { border-collapse: collapse; width: 
+75%; margin: auto; 
+} th, td { border: 1px solid #c56a6a; text-align: 
+center; padding: 10px; 
+} th { background-color: #bc5e5e; 
+} 
+</style>
+</head>
+<body>
+<table id="numberTable">
+<tr>
+<th>N</th>
+<th>10*N</th>
+<th>100*N</th>
+<th>1000*N</th>
+</tr>
+</table>
+<script>
+var table = document.getElementById('numberTable'); 
+for (var i = 1; i <= 10; i++) { var row = 
+table.insertRow(); var cell1 = row.insertCell(0); 
+var cell2 = row.insertCell(1); var cell3 = 
+row.insertCell(2); var cell4 = row.insertCell(3); 
+cell1.textContent = i; cell2.textContent = i * 
+10; cell3.textContent = i * 100; cell4.textContent = i * 1000; 
+} 
+</script>
+</body>
+</html>
